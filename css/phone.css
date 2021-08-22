@@ -1,0 +1,329 @@
+@media screen and (max-width: 1500px) {
+  #hero h1 {
+    margin: 0 50px;
+  }
+  #hero img {
+    width: 500px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  #about .row {
+    grid-template-columns: 1fr 2fr 1fr;
+  }
+}
+@media screen and (max-width: 1250px) {
+  .photos {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  #research input {
+    width: 70%;
+  }
+  #prof {
+    gap: 30px;
+    grid-template-columns: 1fr 2fr;
+  }
+  .depart_item:nth-last-of-type(1),
+  .depart_item:nth-last-of-type(2),
+  .depart_item:nth-last-of-type(3) {
+    margin: 0 20px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  #about .row {
+    grid-template-columns: 1fr 1fr;
+    gap: 0 25px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  footer .container {
+    gap: 30px;
+  }
+  #hero {
+    min-height: 650px;
+  }
+  #depart {
+    grid-template-columns: 2fr repeat(2, 1fr);
+    background: #0a9fd3;
+    gap: 35px;
+  }
+  .depart_item:nth-last-of-type(1),
+  .depart_item:nth-last-of-type(2),
+  .depart_item:nth-last-of-type(3) {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 1000px) {
+  #depart h2 {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  .photos {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  footer .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #hero h1 {
+    font-size: 55px;
+  }
+  #about img[src="img/about.jpg"] {
+    width: 100%;
+  }
+  #prof {
+    gap: 25px;
+    grid-template-columns: 46% 50%;
+  }
+}
+@media screen and (max-width: 900px) {
+  #follow .container {
+    flex-direction: column;
+  }
+  #follow .follow_item a:nth-of-type(3) {
+    margin-right: 0;
+  }
+  .follow_item:first-child {
+    margin-bottom: 20px;
+  }
+  #nav-1 {
+    display: none;
+  }
+  #nav-2 {
+    padding: 10px 0;
+  }
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9;
+    box-shadow: 0px 0px 10px 0px #00000096;
+  }
+  #hero {
+    margin-top: 110px;
+  }
+  .proff_id {
+    grid-template-columns: 18% 82%;
+  }
+  #offcanvas img {
+    width: 30px;
+    margin-right: 15px;
+    height: 30px;
+  }
+  #offcanvas {
+    display: block;
+    padding: 15px;
+    position: fixed;
+    width: 60%;
+    z-index: 10;
+    height: 100%;
+    background: #ffedb5;
+    right: 0;
+    top: 0;
+    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+    transition: all 0.4s linear;
+    -webkit-transition: all 0.4s linear;
+    -moz-transition: all 0.4s linear;
+    -ms-transition: all 0.4s linear;
+    -o-transition: all 0.4s linear;
+  }
+  .offcanvasShow {
+    transform: translateX(0%) !important;
+    -webkit-transform: translateX(0%) !important;
+    -moz-transform: translateX(0%) !important;
+    -ms-transform: translateX(0%) !important;
+    -o-transform: translateX(0%) !important;
+  }
+  #nav-2 .container {
+    align-items: center;
+    padding: 0 20px;
+  }
+  #offcanvas li a {
+    display: block;
+    color: #212529;
+  }
+  #offcanvas li a:hover {
+    background: rgb(242, 255, 55);
+  }
+  img[alt="Cross"] {
+    display: inline-block;
+    margin-bottom: 20px;
+    position: relative;
+    left: 90%;
+    cursor: pointer;
+  }
+  img[alt="Menu"] {
+    display: block;
+    cursor: pointer;
+    padding: 10px;
+  }
+  #menu {
+    display: none;
+  }
+  .event_item div {
+    margin-bottom: 10px;
+  }
+  #prof {
+    grid-template-columns: 1fr;
+  }
+  .prof_item:first-of-type {
+    margin-bottom: 30px;
+  }
+  h2 {
+    align-items: center;
+  }
+  #research {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 25px;
+  }
+  #about .row {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  .event_item div {
+    align-items: center;
+  }
+  #depart {
+    grid-template-columns: 3fr 1fr;
+  }
+  .depart_item:nth-last-of-type(1),
+  .depart_item:nth-last-of-type(2),
+  .depart_item:nth-last-of-type(3) {
+    grid-column: 1/3;
+  }
+}
+@media screen and (max-width: 800px) {
+  #donat {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+}
+@media screen and (max-width: 700px) {
+  #hero {
+    min-height: 590px;
+  }
+  #hero img {
+    width: 400px;
+  }
+  .donate_item {
+    text-align: start;
+  }
+  #hero h1 {
+    font-size: 45px;
+  }
+  #student .container div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #student input {
+    margin-right: 0 !important;
+    margin-bottom: 15px;
+  }
+  footer .container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (max-width: 600px) {
+  #nav-2 img[alt="logo"] {
+    width: 60px;
+  }
+  #hero {
+    margin-top: 80px;
+  }
+  .proff_id {
+    grid-template-columns: 27% 73%;
+  }
+  .photos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 500px) {
+  #hero h1 {
+    margin: 0 20px;
+  }
+  footer {
+    padding: 50px 20px;
+  }
+
+  #hero img {
+    width: 300px;
+  }
+  #hero {
+    min-height: 510px;
+  }
+  #depart {
+    grid-template-columns: 1fr;
+  }
+  .depart_item:nth-last-of-type(1),
+  .depart_item:nth-last-of-type(2),
+  .depart_item:nth-last-of-type(3) {
+    grid-column: auto;
+  }
+  section:not(#hero, #student) {
+    padding: 30px;
+  }
+  #hero h1 {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .follow_item:first-child {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0 20px;
+  }
+  #follow .follow_item a:nth-of-type(3) {
+    margin-right: auto;
+  }
+  .follow_item:first-child a {
+    margin: auto;
+    width: fit-content;
+  }
+  .follow_item:first-child a,
+  .follow_item:first-child h3 {
+    margin-right: 0;
+  }
+  .follow_item:first-child h3 {
+    grid-column: 1/4;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 400px) {
+  .proff_id {
+    grid-template-columns: 1fr;
+  }
+  .proff_name {
+    margin-left: 0;
+    text-align: center;
+  }
+  .proff_img,
+  .proff_img2 {
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+  #hero {
+    min-height: 460px;
+  }
+  #hero h1 {
+    font-size: 36px;
+  }
+  #hero img {
+    width: 250px;
+  }
+  #about .img {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .event_item div {
+    flex-direction: column;
+  }
+  .photos {
+    max-width: 200px;
+    margin: auto;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
